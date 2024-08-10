@@ -14,7 +14,11 @@ body {
 
 
 .img {
-	width: 150px;
+	width: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 40%;
 }
 
 .item {
@@ -30,7 +34,7 @@ body {
 
 
 .img:active {
-	width: 140px;
+	width: 190px;
 }
 
 
