@@ -4,19 +4,33 @@ tg.expand();
 
 let_item = "";
 
+var number = 0;
+
 
 let btn1 = document.getElementById("btn1");
 
 btn1.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
-	}
-	else {
-		tg.MainButton.setText("Вы тапнули 1 раз!");
-		item = "1";
-		tg.MainButton.show();
-	}
+	number = number + 1;
+	var div = document.getElementById('score');
+	div.innerHTML = number + " Xcoin";
 });
+
+
+
+
+
+var div = document.getElementById('score');
+div.innerHTML = number + " Xcoin";
+
+
+
+
+
+
+
+
+
+
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	tg.sendData(item);
@@ -26,6 +40,6 @@ let usercard = document.getElementById("usercard");
 
 let p = document.createElement("p");
 
-p.innerText = `${tg.initDataUnsafe.user.user_id}
+p.innerText = `${tg.initDataUnsafe.user.id}`;
 
 usercard.appendChild(p);
