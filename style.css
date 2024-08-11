@@ -37,7 +37,9 @@ body {
 .img:active {
 	width: 190px;
 }
-
+.img:touch {
+	width: 190px;
+}
 
 .menu {
     background-color: white;
