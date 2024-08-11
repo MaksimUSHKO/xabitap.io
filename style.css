@@ -35,9 +35,7 @@ body {
 
 
 .img:active {
-	width: 190px;
-}
-.img:touch {
+    touch-action: auto;
 	width: 190px;
 }
 
