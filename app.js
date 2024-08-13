@@ -8,11 +8,10 @@ tg.expand();
 let_item = "";
 
 
-fetch("user_info.json")
+fetch("user_info.json", {cache: 'no-store'})
   .then(response => response.json())
   .then(json => console.log(json));
   var number = json[0].score;
-
 
 
 
