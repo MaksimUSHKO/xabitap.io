@@ -11,7 +11,7 @@ let_item = "";
 fetch("user_info.json", {cache: 'no-store'})
   .then(response => response.json())
   .then(json => console.log(json));
-  alert(json[0]);
+  alert(json);
   let number = json[0].score;
 
 
