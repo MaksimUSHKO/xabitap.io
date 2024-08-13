@@ -7,8 +7,6 @@ tg.expand();
 
 let_item = "";
 
-var number = 0;
-
 
 fetch("user_info.json")
   .then(response => response.json())
