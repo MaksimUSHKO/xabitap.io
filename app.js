@@ -1,3 +1,6 @@
+
+
+
 let tg = window.Telegram.WebApp;
 
 tg.expand();
@@ -5,6 +8,18 @@ tg.expand();
 let_item = "";
 
 var number = 0;
+
+
+fetch("user_info.json")
+  .then(response => response.json())
+  .then(json => console.log(json));
+
+
+
+
+
+
+
 
 
 let btn1 = document.getElementById("btn1");
