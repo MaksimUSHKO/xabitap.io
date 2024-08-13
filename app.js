@@ -13,6 +13,7 @@ var number = 0;
 fetch("user_info.json")
   .then(response => response.json())
   .then(json => console.log(json));
+  var number = json[0].score;
 
 
 
